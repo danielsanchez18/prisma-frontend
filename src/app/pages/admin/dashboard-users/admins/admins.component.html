@@ -1,0 +1,61 @@
+<section class="flex flex-col px-20 py-5" style="width: calc(100vw - 20rem);">
+
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-5">
+      <a routerLink="../"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg></a>
+      <h1 class="text-[25px] font-semibold" style="font-family: Poppins;">Administradores</h1>
+    </div>
+    <div>
+      <button class="px-4 py-2 text-sm font-semibold text-white rounded-full hover:bg-heath-950 bg-heath-900">+ Agregar nuevo</button>
+    </div>
+  </div>
+  <div>
+    <div class="flex flex-col py-10">
+      <div class="-m-1.5 overflow-x-auto">
+        <div class="p-1.5 min-w-full inline-block align-middle">
+          <div class="overflow-hidden border">
+            <table class="min-w-full divide-y divide-gray-200">
+              <thead>
+                <tr>
+                  <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase text-start">Name</th>
+                  <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase text-start">Age</th>
+                  <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase text-start">Address</th>
+                  <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase text-end">Action</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200">
+                <tr>
+                  <td class="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">John Brown</td>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">45</td>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">New York No. 1 Lake Park</td>
+                  <td class="px-6 py-4 text-sm font-medium whitespace-nowrap text-end">
+                    <button type="button" class="inline-flex items-center text-sm font-semibold text-blue-600 border border-transparent rounded-lg gap-x-2 hover:text-blue-800 disabled:opacity-50 disabled:pointer-events-none">Delete</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">Jim Green</td>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">27</td>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">London No. 1 Lake Park</td>
+                  <td class="px-6 py-4 text-sm font-medium whitespace-nowrap text-end">
+                    <button type="button" class="inline-flex items-center text-sm font-semibold text-blue-600 border border-transparent rounded-lg gap-x-2 hover:text-blue-800 disabled:opacity-50 disabled:pointer-events-none">Delete</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">Joe Black</td>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">31</td>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">Sidney No. 1 Lake Park</td>
+                  <td class="px-6 py-4 text-sm font-medium whitespace-nowrap text-end">
+                    <button type="button" class="inline-flex items-center text-sm font-semibold text-blue-600 border border-transparent rounded-lg gap-x-2 hover:text-blue-800 disabled:opacity-50 disabled:pointer-events-none">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

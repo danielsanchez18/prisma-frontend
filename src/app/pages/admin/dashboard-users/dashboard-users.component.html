@@ -1,0 +1,58 @@
+<section class="flex flex-col px-20 py-5" style="width: calc(100vw - 20rem);">
+
+  <h1 class="text-[25px] font-semibold" style="font-family: Poppins;">Usuarios</h1>
+
+  <div class="flex justify-between px-20 py-10">
+    <a class="relative block w-48 h-48 overflow-hidden border group rounded-xl" routerLink="students">
+      <div class="overflow-hidden aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl">
+        <img class="object-cover w-full p-1 text-center transition-transform duration-300 ease-in-out group-hover:scale-105 rounded-xl"
+          src="/img/d-students.png"
+          alt="Image Description">
+      </div>
+      <div class="absolute bottom-0 w-full p-1 bg-white start-0 end-0">
+        <div class="p-2 px-5 font-semibold text-center text-gray-800">
+          Estudiantes
+        </div>
+      </div>
+    </a>
+    <a class="relative block w-48 h-48 overflow-hidden border group rounded-xl" routerLink="teachers">
+      <div class="overflow-hidden aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl">
+        <img class="object-cover w-full p-2 text-center transition-transform duration-300 ease-in-out group-hover:scale-105 rounded-xl"
+          src="/img/d-teacher.png"
+          alt="Image Description">
+      </div>
+      <div class="absolute bottom-0 w-full p-1 bg-white start-0 end-0">
+        <div class="p-2 px-5 font-semibold text-center text-gray-800">
+          Docentes
+        </div>
+      </div>
+    </a>
+    <a class="relative block w-48 h-48 py-4 overflow-hidden border group rounded-xl" routerLink="applicants">
+      <div class="overflow-hidden aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl">
+        <img class="object-cover w-full p-2 text-center transition-transform duration-300 ease-in-out group-hover:scale-105 rounded-xl"
+          src="/img/d-applicant.png"
+          alt="Image Description">
+      </div>
+      <div class="absolute bottom-0 w-full p-1 bg-white start-0 end-0">
+        <div class="p-2 px-5 font-semibold text-center text-gray-800">
+          Postulantes
+        </div>
+      </div>
+    </a>
+    <a class="relative block w-48 h-48 overflow-hidden border group rounded-xl" routerLink="admins">
+      <div class="overflow-hidden aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl">
+        <img class="object-cover w-full p-2 text-center transition-transform duration-300 ease-in-out group-hover:scale-105 rounded-xl"
+          src="/img/d-admin.png"
+          alt="Image Description">
+      </div>
+      <div class="absolute bottom-0 w-full p-1 bg-white start-0 end-0">
+        <div class="p-2 px-5 font-semibold text-center text-gray-800">
+          Administradores
+        </div>
+      </div>
+    </a>
+  </div>
+<router-outlet></router-outlet>
+</section>
+
+

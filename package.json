@@ -18,6 +18,8 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "@preline/dropdown": "^2.3.0",
+    "@preline/overlay": "^2.3.0",
     "@preline/toggle-password": "^2.3.0",
     "preline": "^2.3.0",
     "rxjs": "~7.8.0",
