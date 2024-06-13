@@ -1,0 +1,48 @@
+<div class="m-3 mt-0 transition-all ease-out opacity-0 hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:max-w-lg sm:w-full sm:mx-auto">
+  <div class="flex flex-col bg-white border shadow-sm pointer-events-auto rounded-xl">
+    <div class="flex items-center justify-between px-10 py-4 border-b">
+      <h3 class="text-base font-bold text-gray-800">Editar Datos del Administrador</h3>
+      <button type="button" class="flex items-center justify-center text-sm font-semibold text-gray-800 border border-gray-300 rounded-lg size-7 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#edit-admin">
+        <span class="sr-only">Close</span>
+        <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+      </button>
+    </div>
+    <form>
+      <div class="flex flex-col p-10 py-6">
+        <div class="flex flex-col">
+          <label class="text-sm font-medium text-start">Nombres Completos:</label>
+          <div class="flex gap-5 mt-2">
+            <input type="text" class="w-full px-4 py-2.5 text-sm capitalize placeholder:normal-case border-gray-300 rounded-lg focus:border-heath-800 focus:ring-heath-800 disabled:opacity-50 disabled:pointer-events-none" placeholder="Ingrese sus nombres">
+            <input type="text" class="w-full px-4 py-2.5 text-sm capitalize placeholder:normal-case border-gray-300 rounded-lg focus:border-heath-800 focus:ring-heath-800 disabled:opacity-50 disabled:pointer-events-none" placeholder="Ingreses sus apellidos">
+          </div>
+        </div>
+
+        <div class="flex gap-5 mt-4">
+          <div class="flex flex-col w-full space-y-2">
+            <label class="text-sm font-medium text-start">Correo:</label>
+            <input type="text" class="w-full px-4 py-2.5 text-sm border-gray-300 rounded-lg focus:border-heath-800 focus:ring-heath-800 disabled:opacity-50 disabled:pointer-events-none" placeholder="Ingrese su correo">
+          </div>
+        </div>
+
+        <div class="flex gap-5 mt-4">
+          <div class="flex flex-col w-full space-y-2">
+            <label class="text-sm font-medium text-start">Teléfono:</label>
+            <input type="text" class="w-full px-4 py-2.5 text-sm border-gray-300 rounded-lg focus:border-heath-800 focus:ring-heath-800 disabled:opacity-50 disabled:pointer-events-none" placeholder="Ingrese su télefono">
+          </div>
+          <div class="flex flex-col w-full space-y-2">
+            <label class="text-sm font-medium text-start">Dirección:</label>
+            <input type="text" class="w-full px-4 py-2.5 text-sm border-gray-300 rounded-lg focus:border-heath-800 focus:ring-heath-800 disabled:opacity-50 disabled:pointer-events-none" placeholder="Ingrese su dirección">
+          </div>
+        </div>
+
+        <label class="mt-4 mb-2 text-sm font-medium text-start">Perfil:</label>
+        <input type="file" class="w-full text-sm border border-gray-300 rounded-lg shadow-sm focus:z-10 focus:border-heath-800 focus:ring-heath-800 disabled:opacity-50 disabled:pointer-events-none file:bg-gray-100 file:border-0 file:me-4 file:py-2.5 file:px-4">
+      </div>
+
+      <div class="flex items-center justify-end px-10 py-3 border-t gap-x-3">
+        <button class="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#edit-admin">Cerrar</button>
+        <button type="submit" class="inline-flex items-center px-4 py-2 text-sm font-semibold text-white border rounded-lg border-heath-800 bg-heath-800 hover:bg-heath-900 disabled:opacity-50 disabled:pointer-events-none">Aplicar Cambios</button>
+      </div>
+    </form>
+  </div>
+</div>

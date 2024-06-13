@@ -1,0 +1,48 @@
+<div class="m-3 mt-0 transition-all ease-out opacity-0 hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:max-w-lg sm:w-full sm:mx-auto">
+  <div class="flex flex-col bg-white border shadow-sm pointer-events-auto rounded-xl">
+    <div class="flex items-center justify-between px-10 py-4 border-b">
+      <h3 class="text-base font-bold text-gray-800">Detalles del Administrador</h3>
+      <button type="button" class="flex items-center justify-center text-sm font-semibold text-gray-800 border border-gray-300 rounded-lg size-7 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#details-admin" data-hs-overlay-close="">
+      <span class="sr-only">Close</span>
+        <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div>
+      <div class="flex flex-col px-16 py-6 space-y-2 overflow-y-auto">
+        <div class="flex items-center self-center border-gray-400 w-[10rem] h-[10rem] mb-5 border rounded-full">
+          <img src="/img/d-admin.png" class="object-cover rounded-full w-[10rem] h-[10rem]" alt="product?.nameProduct">
+        </div>
+        <div class="flex items-center gap-3 w-[382px] text-sm font-semibold text-heath-950">
+          Código:<p class="text-gray-500">A0001</p>
+        </div>
+        <div class="flex items-center gap-3 text-sm font-semibold text-heath-950">
+          Nombre:<p class="text-gray-500 capitalize">nombre completo del administrador</p>
+        </div>
+        <div class="flex gap-3 text-sm font-semibold max-w-[382px] text-heath-950">
+          Correo:<p class="w-full text-gray-500 break-words whitespace-normal text-start">example&#64;gmail.com</p>
+        </div>
+        <div class="flex gap-3 text-sm font-semibold max-w-[382px] text-heath-950">
+          DNI:<p class="w-full text-gray-500 capitalize break-words whitespace-normal text-start">123456789</p>
+        </div>
+        <div class="flex items-center gap-3 text-sm font-semibold text-heath-950">
+          Fecha de Nacimiento:<p class="text-gray-500 capitalize">18/06/2004</p>
+        </div>
+        <div class="flex items-center gap-3 text-sm font-semibold text-heath-950">
+          Teléfono:<p class="text-gray-500">91234567</p>
+        </div>
+        <div class="flex items-center gap-3 text-sm font-semibold text-heath-950">
+          Dirección:<p class="text-gray-500 capitalize">Sidenet No. 1 Lake Park</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-center px-4 py-3 border-t gap-x-2">
+        <button type="button" class="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm gap-x-2 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#edit-admin">Editar</button>
+        <button type="button" class="inline-flex items-center px-3 py-2 text-sm font-semibold text-white border border-transparent rounded-lg bg-heath-800 gap-x-2 hover:bg-heath-900 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#delete-admin">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

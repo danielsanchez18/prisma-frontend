@@ -1,1 +1,21 @@
-<p>dashboard-registration works!</p>
+<section class="flex flex-col px-20 py-5" style="width: calc(100vw - 20rem);">
+
+  <div class="flex items-center justify-between">
+    <h1 class="text-[25px] font-semibold" style="font-family: Poppins;">Matrículas</h1>
+    <div class="flex gap-5">
+      <form class="hidden sm:block">
+        <div class="relative w-60">
+          <button type="submit" class="absolute inset-y-0 z-20 flex items-center pointer-events-none start-0 ps-4">
+            <svg class="flex-shrink-0 text-gray-400 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </button>
+          <input type="text" class="block w-full px-4 py-2 text-sm border-gray-400 rounded-full ps-11 focus:border-heath-900 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none" placeholder="Buscar">
+        </div>
+      </form>
+
+      <button class="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white rounded-full hover:bg-heath-950 bg-heath-900">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 lucide lucide-circle-plus"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+        Registrar matrícula
+      </button>
+    </div>
+  </div>
+</section>

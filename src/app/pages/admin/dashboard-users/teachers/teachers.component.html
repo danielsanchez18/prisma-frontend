@@ -1,1 +1,104 @@
-<p>teachers works!</p>
+<section class="flex flex-col px-20 py-5" style="width: calc(100vw - 20rem);">
+
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-5">
+      <a routerLink="../"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg></a>
+      <h1 class="text-[25px] font-semibold" style="font-family: Poppins;">Docentes</h1>
+    </div>
+    <div class="flex gap-5">
+      <form class="hidden sm:block">
+        <div class="relative w-60">
+          <button type="submit" class="absolute inset-y-0 flex items-center pointer-events-none ps-4">
+            <svg class="flex-shrink-0 text-gray-400 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </button>
+          <input type="text" class="block w-full px-4 py-2 text-sm border-gray-300 rounded-lg ps-11 focus:border-heath-900 focus:ring-heath-900 disabled:opacity-50 disabled:pointer-events-none" placeholder="Buscar">
+        </div>
+      </form>
+      <button class="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white rounded-lg hover:bg-heath-900 bg-heath-800"  data-hs-overlay="#add-teacher">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 lucide lucide-circle-plus"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+        Agregar nuevo
+      </button>
+      <div id="add-teacher" class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-0 start-0 z-[80] opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none">
+        <app-add-teacher></app-add-teacher>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="flex flex-col py-10">
+      <div class="-m-1.5 overflow-x-auto">
+        <div class="p-1.5 min-w-full inline-block align-middle">
+          <div class="overflow-hidden border rounded-lg">
+            <table class="min-w-full divide-y divide-gray-200">
+              <thead>
+                <tr class="bg-gray-100">
+                  <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase text-start">Código</th>
+                  <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase text-start">Nombre</th>
+                  <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase text-start">Especialidad</th>
+                  <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase text-start">Telefono</th>
+                  <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase text-end">Acción</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-200">
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">D12202002</td>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">John Brown Gomez</td>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">Álgebra I</td>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">936245721</td>
+                  <td class="px-6 py-4 text-sm font-medium whitespace-nowrap text-end">
+                    <button type="button" class="inline-flex items-center text-sm font-semibold border border-transparent rounded-lg text-heath-700 gap-x-2 hover:text-heath-900 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#details-teacher">Ver más</button>
+                    <div id="details-teacher" class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-20 start-0 z-[80] opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none">
+                      <app-details-teacher></app-details-teacher>
+                    </div>
+                    <div id="edit-teacher" class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-20 start-0 z-[80] opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none">
+                      <app-edit-teacher></app-edit-teacher>
+                    </div>
+                    <div id="delete-teacher" class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-20 start-0 z-[80] opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none">
+                      <app-delete-teacher></app-delete-teacher>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">D74202002</td>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">John Brown Gomez</td>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">Ciencias Físicas</td>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">936245721</td>
+                  <td class="px-6 py-4 text-sm font-medium whitespace-nowrap text-end">
+                    <button type="button" class="inline-flex items-center text-sm font-semibold border border-transparent rounded-lg text-heath-700 gap-x-2 hover:text-heath-900 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#details-teacher">Ver más</button>
+                    <div id="details-teacher" class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-20 start-0 z-[80] opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none">
+                      <app-details-teacher></app-details-teacher>
+                    </div>
+                    <div id="edit-teacher" class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-20 start-0 z-[80] opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none">
+                      <app-edit-teacher></app-edit-teacher>
+                    </div>
+                    <div id="delete-teacher" class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-20 start-0 z-[80] opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none">
+                      <app-delete-teacher></app-delete-teacher>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">D13502982</td>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">John Brown Gomez</td>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">Geometría</td>
+                  <td class="px-6 py-4 text-sm text-gray-800 whitespace-nowrap">936245721</td>
+                  <td class="px-6 py-4 text-sm font-medium whitespace-nowrap text-end">
+                    <button type="button" class="inline-flex items-center text-sm font-semibold border border-transparent rounded-lg text-heath-700 gap-x-2 hover:text-heath-900 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#details-teacher">Ver más</button>
+                    <div id="details-teacher" class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-10 start-0 z-[80] opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none">
+                      <app-details-teacher></app-details-teacher>
+                    </div>
+                    <div id="edit-teacher" class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-20 start-0 z-[80] opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none">
+                      <app-edit-teacher></app-edit-teacher>
+                    </div>
+                    <div id="delete-teacher" class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-20 start-0 z-[80] opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none">
+                      <app-delete-teacher></app-delete-teacher>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

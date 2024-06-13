@@ -29,6 +29,19 @@ import { StudentsComponent } from './pages/admin/dashboard-users/students/studen
 import { AdminsComponent } from './pages/admin/dashboard-users/admins/admins.component';
 import { ApplicantsComponent } from './pages/admin/dashboard-users/applicants/applicants.component';
 import { TeachersComponent } from './pages/admin/dashboard-users/teachers/teachers.component';
+import { AddAdminComponent } from './pages/admin/dashboard-users/admins/add-admin/add-admin.component';
+import { DetailsAdminComponent } from './pages/admin/dashboard-users/admins/details-admin/details-admin.component';
+import { EditAdminComponent } from './pages/admin/dashboard-users/admins/edit-admin/edit-admin.component';
+import { DeleteAdminComponent } from './pages/admin/dashboard-users/admins/delete-admin/delete-admin.component';
+import { DetailsApplicantsComponent } from './pages/admin/dashboard-users/applicants/details-applicants/details-applicants.component';
+import { AddTeacherComponent } from './pages/admin/dashboard-users/teachers/add-teacher/add-teacher.component';
+import { DetailsTeacherComponent } from './pages/admin/dashboard-users/teachers/details-teacher/details-teacher.component';
+import { DeleteTeacherComponent } from './pages/admin/dashboard-users/teachers/delete-teacher/delete-teacher.component';
+import { EditTeacherComponent } from './pages/admin/dashboard-users/teachers/edit-teacher/edit-teacher.component';
+import { AddStudentComponent } from './pages/admin/dashboard-users/students/add-student/add-student.component';
+import { EditStudentComponent } from './pages/admin/dashboard-users/students/edit-student/edit-student.component';
+import { DetailsStudentComponent } from './pages/admin/dashboard-users/students/details-student/details-student.component';
+import { DeleteStudentComponent } from './pages/admin/dashboard-users/students/delete-student/delete-student.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +72,19 @@ import { TeachersComponent } from './pages/admin/dashboard-users/teachers/teache
     AdminsComponent,
     ApplicantsComponent,
     TeachersComponent,
+    AddAdminComponent,
+    DetailsAdminComponent,
+    EditAdminComponent,
+    DeleteAdminComponent,
+    DetailsApplicantsComponent,
+    AddTeacherComponent,
+    DetailsTeacherComponent,
+    DeleteTeacherComponent,
+    EditTeacherComponent,
+    AddStudentComponent,
+    EditStudentComponent,
+    DetailsStudentComponent,
+    DeleteStudentComponent,
   ],
   imports: [
     BrowserModule,

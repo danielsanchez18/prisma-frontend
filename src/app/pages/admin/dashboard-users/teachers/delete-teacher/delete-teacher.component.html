@@ -1,0 +1,41 @@
+<div class="m-3 mt-0 transition-all ease-out opacity-0 hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:max-w-lg sm:w-full sm:mx-auto">
+  <div class="flex flex-col bg-white border shadow-sm pointer-events-auto rounded-xl">
+    <div class="flex items-center justify-between px-10 py-4 border-b">
+      <h3 class="text-base font-bold text-gray-800">Eliminar Docente</h3>
+      <button type="button" class="flex items-center justify-center text-sm font-semibold text-gray-800 border border-gray-300 rounded-lg size-7 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#delete-teacher" data-hs-overlay-close="">
+        <span class="sr-only">Close</span>
+        <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div>
+      <div class="flex flex-col p-10 py-6 overflow-y-auto">
+        <p class="mb-4 font-semibold text-center">¿Estás seguro de eliminar el siguiente docente?</p>
+        <div class="my-3 space-y-2 ml-11">
+          <div class="flex items-center gap-3 text-sm font-semibold text-heath-950">
+            Código:<p class="text-gray-500">A21202012</p>
+          </div>
+          <div class="flex items-center gap-3 text-sm font-semibold text-heath-950">
+            Nombre:<p class="text-gray-500 capitalize">Nombre completo del docente</p>
+          </div>
+          <div class="flex items-center gap-3 text-sm font-semibold text-heath-950">
+            Especialidad:<p class="text-gray-500 capitalize">Nombre de especialidad</p>
+          </div>
+          <div class="flex items-center gap-3 text-sm font-semibold text-heath-950">
+            Correo:<p class="text-gray-500">example&#64;gmail.com</p>
+          </div>
+          <div class="flex items-center gap-3 text-sm font-semibold text-heath-950">
+            Teléfono:<p class="text-gray-500 capitalize">936245721</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center px-4 py-3 border-t gap-x-2">
+        <button class="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm gap-x-2 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#delete-teacher">Cerrar</button>
+        <button class="inline-flex items-center px-3 py-2 text-sm font-semibold text-white border rounded-lg bg-heath-800 gap-x-2 hover:bg-heath-900 disabled:opacity-50 disabled:pointer-events-none">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
