@@ -1,0 +1,49 @@
+<div class="m-3 mt-0 transition-all ease-out opacity-0 hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:max-w-lg sm:w-full sm:mx-auto">
+  <div class="flex flex-col bg-white border shadow-sm pointer-events-auto rounded-xl">
+    <div class="flex items-center justify-between px-10 py-4 border-b">
+      <h3 class="font-bold text-gray-800">Envíar comentario</h3>
+      <button type="button" class="flex items-center justify-center text-sm font-semibold text-gray-800 border border-gray-300 rounded-lg size-7 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#add-comment">
+        <span class="sr-only">Close</span>
+        <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+      </button>
+    </div>
+
+    <div>
+      <div class="flex flex-col px-10 pt-4 pb-6">
+        <form class="sm:block">
+          <div class="relative">
+            <button type="submit" class="absolute inset-y-0 flex items-center pointer-events-none ps-4">
+              <svg class="flex-shrink-0 text-gray-400 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            </button>
+            <input type="text" class="block w-full px-4 py-2 text-sm border-gray-300 rounded-lg ps-11 focus:border-heath-900 focus:ring-heath-900 disabled:opacity-50 disabled:pointer-events-none" placeholder="Buscar Estudiante">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <form>
+      <div class="flex flex-col p-10 py-6">
+        <div class="self-center px-4 py-3 mb-4 border shadow-md rounded-xl">
+          <div class="flex items-center gap-5">
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-user-round size-8"><path d="M18 20a6 6 0 0 0-12 0"/><circle cx="12" cy="10" r="4"/><circle cx="12" cy="12" r="10"/></svg></div>
+            <div class="font-semibold" style="font-family: Poppins;">
+              <h1 class="text-sm">Juan Daniel Sánchez Pisfil</h1>
+              <p class="text-xs text-gray-400">Para: U21202012</p>
+            </div>
+          </div>
+        </div>
+
+        <label class="mb-2 text-sm font-medium">Asunto:</label>
+        <input type="text" class="w-full px-4 py-2.5 font-semibold placeholder:font-normal text-sm border-gray-300 rounded-lg focus:border-heath-800 focus:ring-heath-800 disabled:opacity-50 disabled:pointer-events-none" placeholder="Ingrese el asunto">
+
+        <label class="mt-4 mb-2 text-sm font-medium">Mensaje:</label>
+        <textarea type="text" class="w-full px-4 py-2.5 text-sm border-gray-300 rounded-lg focus:border-heath-800 focus:ring-heath-800 disabled:opacity-50 disabled:pointer-events-none" placeholder="Cuerpo del mensaje"></textarea>
+      </div>
+
+      <div class="flex items-center justify-end px-10 py-3 border-t gap-x-3">
+        <button type="reset" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#add-comment">Cancelar</button>
+        <button type="submit" class="inline-flex items-center px-4 py-2 text-sm font-semibold text-white border rounded-lg border-heath-800 bg-heath-800 hover:bg-heath-900 disabled:opacity-50 disabled:pointer-events-none">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>

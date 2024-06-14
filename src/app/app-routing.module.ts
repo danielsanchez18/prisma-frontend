@@ -15,6 +15,8 @@ import { StudentsComponent } from './pages/admin/dashboard-users/students/studen
 import { TeachersComponent } from './pages/admin/dashboard-users/teachers/teachers.component';
 import { ApplicantsComponent } from './pages/admin/dashboard-users/applicants/applicants.component';
 import { AdminsComponent } from './pages/admin/dashboard-users/admins/admins.component';
+import { DashboardScheduleComponent } from './pages/admin/dashboard-schedule/dashboard-schedule.component';
+import { DashboardClassComponent } from './pages/admin/dashboard-class/dashboard-class.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -27,15 +29,16 @@ const routes: Routes = [
     { path: 'users/teachers', component: TeachersComponent},
     { path: 'users/applicants', component: ApplicantsComponent},
     { path: 'users/admins', component: AdminsComponent},
-    {path: 'students', component: StudentsComponent},
+    { path: 'students', component: StudentsComponent},
     { path: 'registration', component: DashboardRegistrationComponent },
     { path: 'classrooms', component: DashboardClassroomsComponent },
     { path: 'courses', component: DashboardCoursesComponent },
+    { path: 'schedule', component: DashboardScheduleComponent },
+    { path: 'class', component: DashboardClassComponent },
     { path: 'qualifications', component: DashboardQualificationsComponent },
     { path: 'comments', component: DashboardCommentsComponent },
     { path: 'help', component: DashboardHelpComponent },
   ]},
-
 ];
 
 @NgModule({

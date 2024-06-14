@@ -53,6 +53,9 @@ import { DeleteClassroomComponent } from './pages/admin/dashboard-classrooms/del
 import { AddCourseComponent } from './pages/admin/dashboard-courses/add-course/add-course.component';
 import { EditCourseComponent } from './pages/admin/dashboard-courses/edit-course/edit-course.component';
 import { DeleteCourseComponent } from './pages/admin/dashboard-courses/delete-course/delete-course.component';
+import { AddCommentComponent } from './pages/admin/dashboard-comments/add-comment/add-comment.component';
+import { DashboardScheduleComponent } from './pages/admin/dashboard-schedule/dashboard-schedule.component';
+import { DashboardClassComponent } from './pages/admin/dashboard-class/dashboard-class.component';
 
 @NgModule({
   declarations: [
@@ -107,6 +110,9 @@ import { DeleteCourseComponent } from './pages/admin/dashboard-courses/delete-co
     AddCourseComponent,
     EditCourseComponent,
     DeleteCourseComponent,
+    AddCommentComponent,
+    DashboardScheduleComponent,
+    DashboardClassComponent,
   ],
   imports: [
     BrowserModule,
