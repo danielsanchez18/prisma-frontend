@@ -1,0 +1,56 @@
+<div class="m-3 mt-0 transition-all ease-out opacity-0 hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:max-w-lg sm:w-full sm:mx-auto">
+  <div class="flex flex-col bg-white border shadow-sm pointer-events-auto rounded-xl">
+    <div class="flex items-center justify-between px-10 py-4 border-b">
+      <h3 class="text-base font-bold text-gray-800">Cambiar Estado de Matrícula</h3>
+      <button type="button" class="flex items-center justify-center text-sm font-semibold text-gray-800 border border-gray-300 rounded-lg size-7 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#edit-registration">
+        <span class="sr-only">Close</span>
+        <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+      </button>
+    </div>
+    <form>
+      <div class="flex flex-col p-10 py-6">
+        <label class="my-4 text-sm font-medium text-start">Marcar como:</label>
+        <ul class="flex flex-row pb-5">
+          <li class="inline-flex items-center gap-x-2.5 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg sm:-ms-px sm:mt-0 sm:first:rounded-se-none sm:first:rounded-es-lg sm:last:rounded-es-none sm:last:rounded-se-lg">
+            <div class="relative flex items-start w-full">
+              <div class="flex items-center h-5">
+                <input id="hs-horizontal-list-group-item-radio-1" name="hs-horizontal-list-group-item-radio" type="radio" class="border-gray-400 rounded-full disabled:opacity-50" checked="">
+              </div>
+              <label for="hs-horizontal-list-group-item-radio-1" class="block w-full text-sm text-gray-600 ms-3">
+                En proceso
+              </label>
+            </div>
+          </li>
+
+          <li class="inline-flex items-center gap-x-2.5 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg sm:-ms-px sm:mt-0 sm:first:rounded-se-none sm:first:rounded-es-lg sm:last:rounded-es-none sm:last:rounded-se-lg">
+            <div class="relative flex items-start w-full">
+              <div class="flex items-center h-5">
+                <input id="hs-horizontal-list-group-item-radio-2" name="hs-horizontal-list-group-item-radio" type="radio" class="border-gray-400 rounded-full disabled:opacity-50">
+              </div>
+              <label for="hs-horizontal-list-group-item-radio-2" class="block w-full text-sm text-gray-600 ms-3">
+                Completado
+              </label>
+            </div>
+          </li>
+
+          <li class="inline-flex items-center gap-x-2.5 py-3 px-4 text-sm font-medium bg-white border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg sm:-ms-px sm:mt-0 sm:first:rounded-se-none sm:first:rounded-es-lg sm:last:rounded-es-none sm:last:rounded-se-lg">
+            <div class="relative flex items-start w-full">
+              <div class="flex items-center h-5">
+                <input id="hs-horizontal-list-group-item-radio-3" name="hs-horizontal-list-group-item-radio" type="radio" class="border-gray-400 rounded-full disabled:opacity-50">
+              </div>
+              <label for="hs-horizontal-list-group-item-radio-3" class="block w-full text-sm text-gray-600 ms-3">
+                Rechazado
+              </label>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="flex items-center justify-end px-10 py-3 border-t gap-x-3">
+        <button class="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#edit-registration">Cerrar</button>
+        <button type="submit" class="inline-flex items-center px-4 py-2 text-sm font-semibold text-white border rounded-lg border-heath-800 bg-heath-800 hover:bg-heath-900 disabled:opacity-50 disabled:pointer-events-none">Aplicar Cambios</button>
+      </div>
+    </form>
+  </div>
+</div>

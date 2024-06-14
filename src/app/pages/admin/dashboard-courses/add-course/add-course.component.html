@@ -1,0 +1,22 @@
+<div class="m-3 mt-0 transition-all ease-out opacity-0 hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 sm:max-w-lg sm:w-full sm:mx-auto">
+  <div class="flex flex-col bg-white border shadow-sm pointer-events-auto rounded-xl">
+    <div class="flex items-center justify-between px-10 py-4 border-b">
+      <h3 class="font-bold text-gray-800">Agregar Curso</h3>
+      <button type="button" class="flex items-center justify-center text-sm font-semibold text-gray-800 border border-gray-300 rounded-lg size-7 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#add-course">
+        <span class="sr-only">Close</span>
+        <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+      </button>
+    </div>
+    <form>
+      <div class="flex flex-col p-10 py-6">
+        <label class="mb-2 text-sm font-medium">Nombre:</label>
+        <input type="text" class="w-full px-4 mb-4 py-2.5 text-sm border-gray-300 rounded-lg focus:border-heath-800 focus:ring-heath-800 disabled:opacity-50 disabled:pointer-events-none" placeholder="Ingrese el nombre del curso">
+      </div>
+
+      <div class="flex items-center justify-end px-10 py-3 border-t gap-x-3">
+        <button type="reset" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-800 bg-white border border-gray-300 rounded-lg shadow-sm hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#add-course">Cancelar</button>
+        <button type="submit" class="inline-flex items-center px-4 py-2 text-sm font-semibold text-white border rounded-lg border-heath-800 bg-heath-800 hover:bg-heath-900 disabled:opacity-50 disabled:pointer-events-none">Registar</button>
+      </div>
+    </form>
+  </div>
+</div>

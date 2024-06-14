@@ -42,6 +42,17 @@ import { AddStudentComponent } from './pages/admin/dashboard-users/students/add-
 import { EditStudentComponent } from './pages/admin/dashboard-users/students/edit-student/edit-student.component';
 import { DetailsStudentComponent } from './pages/admin/dashboard-users/students/details-student/details-student.component';
 import { DeleteStudentComponent } from './pages/admin/dashboard-users/students/delete-student/delete-student.component';
+import { EditRegistrationComponent } from './pages/admin/dashboard-registration/edit-registration/edit-registration.component';
+import { DetailsRegistrationComponent } from './pages/admin/dashboard-registration/details-registration/details-registration.component';
+import { DeleteRegistrationComponent } from './pages/admin/dashboard-registration/delete-registration/delete-registration.component';
+import { ApplicantRegistrationComponent } from './pages/admin/dashboard-registration/applicant-registration/applicant-registration.component';
+import { StudentRegistrationComponent } from './pages/admin/dashboard-registration/student-registration/student-registration.component';
+import { AddClassroomComponent } from './pages/admin/dashboard-classrooms/add-classroom/add-classroom.component';
+import { EditClassroomComponent } from './pages/admin/dashboard-classrooms/edit-classroom/edit-classroom.component';
+import { DeleteClassroomComponent } from './pages/admin/dashboard-classrooms/delete-classroom/delete-classroom.component';
+import { AddCourseComponent } from './pages/admin/dashboard-courses/add-course/add-course.component';
+import { EditCourseComponent } from './pages/admin/dashboard-courses/edit-course/edit-course.component';
+import { DeleteCourseComponent } from './pages/admin/dashboard-courses/delete-course/delete-course.component';
 
 @NgModule({
   declarations: [
@@ -85,6 +96,17 @@ import { DeleteStudentComponent } from './pages/admin/dashboard-users/students/d
     EditStudentComponent,
     DetailsStudentComponent,
     DeleteStudentComponent,
+    EditRegistrationComponent,
+    DetailsRegistrationComponent,
+    DeleteRegistrationComponent,
+    ApplicantRegistrationComponent,
+    StudentRegistrationComponent,
+    AddClassroomComponent,
+    EditClassroomComponent,
+    DeleteClassroomComponent,
+    AddCourseComponent,
+    EditCourseComponent,
+    DeleteCourseComponent,
   ],
   imports: [
     BrowserModule,
