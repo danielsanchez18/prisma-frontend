@@ -56,6 +56,11 @@ import { DeleteCourseComponent } from './pages/admin/dashboard-courses/delete-co
 import { AddCommentComponent } from './pages/admin/dashboard-comments/add-comment/add-comment.component';
 import { DashboardScheduleComponent } from './pages/admin/dashboard-schedule/dashboard-schedule.component';
 import { DashboardClassComponent } from './pages/admin/dashboard-class/dashboard-class.component';
+import { DashboardStudentComponent } from './pages/students/dashboard-student/dashboard-student.component';
+import { StudentCoursesComponent } from './pages/students/student-courses/student-courses.component';
+import { DetailsCourseComponent } from './pages/students/details-course/details-course.component';
+import { ProgressCourseComponent } from './pages/students/progress-course/progress-course.component';
+import { InformationCourseComponent } from './pages/students/information-course/information-course.component';
 
 @NgModule({
   declarations: [
@@ -113,6 +118,11 @@ import { DashboardClassComponent } from './pages/admin/dashboard-class/dashboard
     AddCommentComponent,
     DashboardScheduleComponent,
     DashboardClassComponent,
+    DashboardStudentComponent,
+    StudentCoursesComponent,
+    DetailsCourseComponent,
+    ProgressCourseComponent,
+    InformationCourseComponent,
   ],
   imports: [
     BrowserModule,

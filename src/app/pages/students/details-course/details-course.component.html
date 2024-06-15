@@ -1,0 +1,29 @@
+<style>
+  a.active {
+    color: #fff;
+    background-color: #2563EB;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+</style>
+
+<section class="flex flex-col items-center justify-center">
+<a routerLink="../" class="flex items-center gap-5 text-gray-600 hover:text-gray-900">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+  <p class="text-lg font-semibold">Atrás</p>
+</a>
+<div class="shadow-lg bg-white border-l-8 border-l-heath-950 rounded-lg flex items-center w-[40rem] px-10 border py-3 my-2">
+  <h1 class="text-lg font-bold text-heath-900">Nombre del Curso</h1>
+</div>
+<div class="shadow-lg bg-white rounded-lg w-[40rem] px-10 border py-5 my-2">
+  <div class="flex items-center justify-between border-b-2">
+    <a class="w-full py-4 mx-5 text-sm font-semibold text-center active:border-b-2 active:border-heath-900" data-toggle="#progress-course">PROGRESO</a>
+    <a class="w-full py-4 mx-5 text-sm font-semibold text-center active:border-b-2 active:border-heath-900" data-toggle="#information-course">INFORMACION</a>
+  </div>
+  <div id="progress-course">
+    <!-- <app-progress-course></app-progress-course> -->
+  </div>
+  <div id="information-course">
+    <app-information-course></app-information-course>
+  </div>
+</div>
+</section>
