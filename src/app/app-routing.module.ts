@@ -20,6 +20,7 @@ import { DashboardClassComponent } from './pages/admin/dashboard-class/dashboard
 import { DashboardStudentComponent } from './pages/students/dashboard-student/dashboard-student.component';
 import { DetailsCourseComponent } from './pages/students/details-course/details-course.component';
 import { StudentCoursesComponent } from './pages/students/student-courses/student-courses.component';
+import { AccountStudentComponent } from './pages/students/account-student/account-student.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -44,7 +45,9 @@ const routes: Routes = [
   ]},
   { path: 'student', component: DashboardStudentComponent, children:[
     { path: '', component: StudentCoursesComponent},
-    { path: 'details-course', component: DetailsCourseComponent}
+    { path: 'details-course', component: DetailsCourseComponent},
+    { path: 'account', component: AccountStudentComponent}
+
   ]}
 
 ];

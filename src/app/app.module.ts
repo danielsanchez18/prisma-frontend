@@ -61,6 +61,9 @@ import { StudentCoursesComponent } from './pages/students/student-courses/studen
 import { DetailsCourseComponent } from './pages/students/details-course/details-course.component';
 import { ProgressCourseComponent } from './pages/students/progress-course/progress-course.component';
 import { InformationCourseComponent } from './pages/students/information-course/information-course.component';
+import { AccountStudentComponent } from './pages/students/account-student/account-student.component';
+import { EditAccountStudentComponent } from './pages/students/edit-account-student/edit-account-student.component';
+import { AddRectificationComponent } from './pages/students/add-rectification/add-rectification.component';
 
 @NgModule({
   declarations: [
@@ -123,6 +126,9 @@ import { InformationCourseComponent } from './pages/students/information-course/
     DetailsCourseComponent,
     ProgressCourseComponent,
     InformationCourseComponent,
+    AccountStudentComponent,
+    EditAccountStudentComponent,
+    AddRectificationComponent,
   ],
   imports: [
     BrowserModule,

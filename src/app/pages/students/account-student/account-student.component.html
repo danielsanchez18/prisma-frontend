@@ -1,0 +1,48 @@
+<section class="flex flex-col items-center justify-center" style="height: calc(100vh - 100px); width: 100wh;">
+  <div class="w-full">
+    <a routerLink="/student" class="flex items-center gap-3 mx-40 my-5 text-gray-500 w-fit hover:text-gray-900">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left size-5"><path d="m15 18-6-6 6-6"/></svg>
+      <p class="text-sm font-medium">Regresar al portal</p>
+    </a>
+  </div>
+  <div class="py-3 border shadow-lg rounded-2xl min-w-[28rem]">
+    <div class="flex items-center gap-4 py-5 mx-16 border-b-2 border-heath-900">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="size-20 lucide lucide-circle-user-round"><path d="M18 20a6 6 0 0 0-12 0"/><circle cx="12" cy="10" r="4"/><circle cx="12" cy="12" r="10"/></svg>
+      <h1 class="text-[28px] font-extrabold leading-7 capitalize">Juan Daniel<br>Sanchez Pisfil</h1>
+    </div>
+    <div class="py-10 mx-16 space-y-1">
+      <div class="flex items-center gap-3 font-medium">Código:
+        <p class="text-gray-500">U21202012</p>
+      </div>
+      <div class="flex items-center gap-3 font-medium">Fecha de ingreso:
+        <p class="text-gray-500">18/06/2024</p>
+      </div>
+      <div class="flex items-center gap-3 font-medium">Grado - Sección:
+        <p class="text-gray-500">4° B</p>
+      </div>
+      <div class="flex items-center gap-3 font-medium">Nivel de estudio:
+        <p class="text-gray-500">Secundaria</p>
+      </div>
+      <div class="flex items-center gap-3 font-medium">Turno:
+        <p class="text-gray-500">Tarde</p>
+      </div>
+      <div class="flex items-center gap-3 font-medium">Correo:
+        <p class="text-gray-500">example&#64;gmail.com</p>
+      </div>
+      <div class="flex items-center gap-3 font-medium">Teléfono:
+        <p class="text-gray-500">936245721</p>
+      </div>
+      <div class="flex gap-3 font-medium">Dirección:
+        <p class="text-gray-500 ">Av. London Park Nro 139</p>
+      </div>
+    </div>
+
+    <div class="flex justify-center gap-5 mt-0 mb-10 mx-14">
+      <button type="button" class="w-full px-4 py-2 text-sm font-bold text-white border rounded-lg shadow-md border-heath-800 hover:border-heath-900 bg-heath-800 gap-x-2 hover:bg-heath-900 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#edit-account-student">Editar</button>
+      <div id="edit-account-student" class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-10 start-0 z-[80] opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none">
+        <app-edit-account-student></app-edit-account-student>
+      </div>
+      <button class="w-full px-4 py-2 text-sm font-bold border border-gray-500 rounded-lg shadow-md hover:bg-gray-100">Cerrar Sesión</button>
+    </div>
+  </div>
+</section>
